@@ -7,6 +7,16 @@ class ActionProvider  {
     this.createClientMessage = createClientMessage;
   }
 
+  handleJavaScriptList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic! I've got the following resources for you on JavaScript:",
+      {
+        widget: "javascriptLinks"
+      }
+    );
+    this.updateChatbotState(message)
+  }
+
   greet() {
     const greetingMessage = this.createChatBotMessage('hi, friend');
     this.updateChatbotState(greetingMessage);
