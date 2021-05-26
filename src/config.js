@@ -3,8 +3,8 @@ import LearningOptions from './components/LearningOptions';
 import LinkList from './components/LinkList';
 
 const config = {
-  botName: "Learning bot",
-  initialMessages: [createChatBotMessage('Hi, I am here to help. What would you like to learn today?', {
+  botName: "Mental Health Bot",
+  initialMessages: [createChatBotMessage('How are you feeling today? I am here for you.', {
     widget: "learningOptions"
   }
 )],
@@ -14,7 +14,7 @@ const config = {
       widgetFunc: (props) => <LearningOptions {...props} />
     },
     {
-      widgetName: "javascriptLinks",
+      widgetName: "anxietyLinks",
       widgetFunc: (props) => <LinkList {...props} />,
       props: {
         options: [

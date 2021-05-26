@@ -6,8 +6,13 @@
 
 .learning-options-button{
   padding: 0.5rem;
-  border-radius: 25px;
   background: transparent;
-  border: 1px solid green;
+  border-radius: 25px;
+  border: 1px solid #376B7E;
   margin: 3px;
+}
+
+.learning-options-button:hover {
+  background: #376B7E;
+  color: white;
 }

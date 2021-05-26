@@ -3,7 +3,7 @@ import './LearningOptions.css';
 
 const LearningOptions = (props) => {
   const options = [
-    {text: "JavaScript", handler: props.actionProvider.handleJavaScriptList, id: 1},
+    {text: "Anxiety", handler: props.actionProvider.handleJavaScriptList, id: 1},
     {text: "Data visualization", handler: () => {}, id: 2},
     {text: "APIs", handler: () => {}, id: 3},
     {text: "Security", handler: () => {}, id: 4},
