@@ -7,11 +7,11 @@ class ActionProvider  {
     this.createClientMessage = createClientMessage;
   }
 
-  handleJavaScriptList = () => {
+  handleAnxietyList = () => {
     const message = this.createChatBotMessage(
-      "Fantastic! I've got the following resources for you on JavaScript:",
+      "Anxiety can be difficult to cope with. Here are some helpful resources:",
       {
-        widget: "javascriptLinks"
+        widget: "anxietyLinks"
       }
     );
     this.updateChatbotState(message)

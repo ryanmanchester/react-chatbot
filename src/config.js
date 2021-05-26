@@ -19,8 +19,8 @@ const config = {
       props: {
         options: [
           {
-            text: "Introduction to JS",
-            url:  "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/",
+            text: "What is Anxiety?",
+            url:  "https://www.psychologytoday.com/us/basics/anxiety",
             id: 1
           },
           {
