@@ -13,6 +13,8 @@ class MessageParser {
     }
     if(lowerCaseMessage.includes('anxi')) {
       this.actionProvider.handleAnxietyList();
+    } else {
+      this.actionProvider.invalidMessage();
     }
   }
 }
