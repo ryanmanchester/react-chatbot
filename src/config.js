@@ -24,19 +24,42 @@ const config = {
             id: 1
           },
           {
-            text: "Mozilla JS Guide",
+            text: "How I Healed My Lifelong Anxiety",
             url:
-              "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+              "https://theholisticpsychologist.com/how-i-healed-my-life-long-anxiety/",
             id: 2,
           },
           {
-            text: "Frontend Masters",
-            url: "https://frontendmasters.com",
+            text: "Natural Approaches to Anxiety",
+            url: "https://www.psychologytoday.com/intl/basics/anxiety/natural-approaches-anxiety",
             id: 3,
           },
         ]
       }
-    }
+    },
+    {
+      widgetName: "depressionLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+          text:'What is Depression?',
+          url: 'https://www.psychologytoday.com/intl/basics/depression',
+          id: 1
+        },
+        {
+          text:'Integrative Mental Health',
+          url: 'https://www.huffpost.com/entry/integrative-mental-health_b_354332',
+          id: 2
+        },
+        {
+          text: 'Is Depression Good For You?',
+          url: 'https://fullpermissionliving.blogspot.com/2008/03/is-depression-good-for-you.html',
+          id: 3
+        }
+      ]
+      }
+    },
   ],
   customStyles: {
     botMessageBox: {

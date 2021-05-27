@@ -4,7 +4,7 @@ import './LearningOptions.css';
 const LearningOptions = (props) => {
   const options = [
     {text: "Anxiety", handler: props.actionProvider.handleAnxietyList, id: 1},
-    {text: "Depression", handler: () => {}, id: 2},
+    {text: "Depression", handler: props.actionProvider.handleDepressionList, id: 2},
     {text: "Relationships", handler: () => {}, id: 3},
 
   ];

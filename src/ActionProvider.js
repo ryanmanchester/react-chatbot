@@ -17,6 +17,15 @@ class ActionProvider  {
     this.updateChatbotState(message)
   }
 
+  handleDepressionList = () => {
+    const message = this.createChatBotMessage("Depression can feel overwhelming. I found these resources to learn more:",
+    {
+      widget: "depressionLinks"
+    }
+  );
+    this.updateChatbotState(message)
+  }
+
   greet() {
     const greetingMessage = this.createChatBotMessage('hi, friend');
     this.updateChatbotState(greetingMessage);

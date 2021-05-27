@@ -13,8 +13,9 @@ class MessageParser {
     }
     if(lowerCaseMessage.includes('anxi')) {
       this.actionProvider.handleAnxietyList();
-    } else {
-      this.actionProvider.invalidMessage();
+    }
+    if (lowerCaseMessage.includes('depress')) {
+      this.actionProvider.handleDepressionList();
     }
   }
 }
