@@ -4,9 +4,7 @@ import LinkList from './components/LinkList';
 
 const config = {
   botName: "Mental Health Bot",
-  initialMessages: [createChatBotMessage('How are you feeling today? I am here for you.', {
-    widget: "learningOptions"
-  }
+  initialMessages: [createChatBotMessage('How are you feeling today? Type your response below and I will find you resources to learn more. You are not alone.'
 )],
   widgets: [
     {

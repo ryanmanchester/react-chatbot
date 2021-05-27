@@ -10,12 +10,12 @@ class MessageParser {
     const lowerCaseMessage = message.toLowerCase();
     if (lowerCaseMessage.includes('hello')) {
       this.actionProvider.greet();
-    }
-    if(lowerCaseMessage.includes('anxi')) {
-      this.actionProvider.handleAnxietyList();
-    }
-    if (lowerCaseMessage.includes('depress')) {
-      this.actionProvider.handleDepressionList();
+    } else if(lowerCaseMessage.includes('anxi') || lowerCaseMessage.includes('afraid') || lowerCaseMessage.includes('scar')) {
+        this.actionProvider.handleAnxietyList();
+    } else if (lowerCaseMessage.includes('depress') || lowerCaseMessage.includes('sad') || lowerCaseMessage.includes('lone')) {
+        this.actionProvider.handleDepressionList();
+    } else {
+      this.actionProvider.invalidMessage();
     }
   }
 }
