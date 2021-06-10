@@ -41,7 +41,7 @@ class ActionProvider  {
   }
 
   invalidMessage() {
-    const message = this.createChatBotMessage('Sorry, I did not understand. Please type how you feel below and I will find you resources. Or click one of these to get started:',
+    const message = this.createChatBotMessage('Sorry, I did not understand. Perhaps one of these links can help get us started:',
     {
       widget: "learningOptions"
     }
