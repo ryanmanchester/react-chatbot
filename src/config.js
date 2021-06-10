@@ -1,7 +1,7 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import LearningOptions from './components/LearningOptions';
 import LinkList from './components/LinkList';
-import {anxietyLinks, depressionLinks} from './links/resourceLinks';
+import {anxietyLinks, depressionLinks, realationshipLinks} from './links/resourceLinks';
 
 
 const config = {
@@ -27,6 +27,13 @@ const config = {
         options: depressionLinks
       }
     },
+    {
+      widgetName: "realationshipLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: realationshipLinks
+      }
+    }
   ],
   customStyles: {
     botMessageBox: {

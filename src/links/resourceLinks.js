@@ -34,3 +34,21 @@ export const depressionLinks = [
   id: 3
 }
 ]
+
+export const realationshipLinks = [
+  {
+    text: 'Why Relationships Matter',
+    url: 'https://www.psychologytoday.com/us/basics/relationships',
+    id: 1
+  },
+  {
+    text: 'Love and Sex',
+    url: 'https://www.psychologytoday.com/us/basics/relationships/love-and-sex',
+    id: 2
+  },
+  {
+    text: 'Nobody Needs You!',
+    url: 'http://fullpermissionliving.blogspot.com/2012/09/the-truth-about-everything-part-nine.html',
+    id: 3
+  }
+]

@@ -26,8 +26,17 @@ class ActionProvider  {
     this.updateChatbotState(message)
   }
 
+  handleRelationshipList = () => {
+    const message = this.createChatBotMessage("Every realationship can feel rocky at times. Start here to learn about realationships:",
+    {
+      widget: "realationshipLinks"
+    }
+  );
+    this.updateChatbotState(message)
+  }
+
   greet() {
-    const greetingMessage = this.createChatBotMessage('hi, friend');
+    const greetingMessage = this.createChatBotMessage('Hello! Tell me how you are feeling. I will find helpful resources for you.');
     this.updateChatbotState(greetingMessage);
   }
 
